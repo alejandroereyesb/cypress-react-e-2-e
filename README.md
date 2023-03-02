@@ -23,5 +23,7 @@ Many Thanks to all Stargazers
 - Install dependencies using the command `yarn install` or `npm install`.
 - Start the Rect app using the command `yarn start` or `npm run start`. It will launch the app locally on the URL http://localhost:3000
 - Now open another terminal/command prompt in the same folder.
-- Type the command `npx cypress open` and press the enter key. It will open up the Cypress app on your browser to start running the test cases.
+- Type the command `npm run cypress` or `npx cypress open` and press the enter key. It will open up the Cypress app on your browser to start running the test cases.
+
+NOTE this project was made with `"cypress": "^10.5.0"`
 
