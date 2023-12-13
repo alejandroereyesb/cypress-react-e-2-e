@@ -19,16 +19,22 @@ describe('The Name Field', () => {
 
 describe('The food field', () => {
   it('Has Pasta', () => {
+    cy.get('input[name="name"]')
+    .clear().type('Jane');
     cy.get('select').select("Pasta");
     cy.get('.details > p').should('contain',"🍝");
   });
 
   it('Has Cake', () => {
+    cy.get('input[name="name"]')
+    .clear().type('Nombre por defecto');
     cy.get('select').select("Cake");
     cy.get('.details > p').should('contain',"🎂");
   });
 
   it('Has Pizza', () => {
+    cy.get('input[name="name"]')
+    .clear().type('Jane');
     cy.get('select').select("Pizza");
     cy.get('.details > p').should('not.contain',"🎂");
   });
